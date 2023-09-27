@@ -3,12 +3,18 @@ using System;
 using System.Net.Http;
 using System.Xml.Linq;
 using Microsoft.Extensions.Configuration;
+using RestSharp;
+using System.Threading.Tasks;
 
 
 namespace APIsAndJSON
 {
     public class Program
     {
+        //internal interface IRestResponse
+        //{
+        //}
+
 
         static async Task  Main(string[] args)
         {
@@ -71,7 +77,8 @@ namespace APIsAndJSON
             Console.WriteLine("\n\n\nExercise 2 The Weather From Nashville------");
             Console.WriteLine("Press Return to continue> ");
             Console.ReadLine();
-            string weatherUrl        = "http://api.openweathermap.org/data/2.5/weather?lat=36.1622767&lon=-86.7742984&&units=imperia&appid="+apiKey;
+            //string weatherUrl        = "http://api.openweathermap.org/data/2.5/weather?lat=36.1622767&lon=-86.7742984&&units=imperia&appid="+apiKey;
+            string weatherUrl = "http://api.openweathermap.org/data/2.5/weather?q=Nashville&units=imperial&appid=" + apiKey;
             string weatherResponse   =  client.GetStringAsync(weatherUrl).Result;  //send and receive the response
             JObject weatherObject    = JObject.Parse(weatherResponse);
             //Console.WriteLine(weatherObject);
@@ -81,6 +88,21 @@ namespace APIsAndJSON
             Console.WriteLine("Relative Humidity: " + weatherObject["main"]["humidity"] + "%");
 
 
+
+            //-----------BONUS Call Of Duty-------------------------------
+            //string apiKeyStr = weatherConfig.GetConnectionString("ApiKey");
+            string codKey = weatherConfig.GetSection("CallOfDutyApi")["ApiKey"];
+
+
+            Console.WriteLine("\n\n\nBONUS Call Of Duty API------");
+            Console.WriteLine("Press Return to continue> ");
+            var codClient = new RestClient("https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/Amartin743/psn"); //?rapidapi-key="");
+            var request   = new RestRequest(Method.Get.ToString());
+            request.AddHeader("x-rapidapi-host", "call-of-duty-modern-warfare.p.rapidapi.com");
+            //request.AddHeader("x-rapidapi-key", "");
+            request.AddHeader("x-rapidapi-key", codKey);
+            var callOfDutyResponse = codClient.Execute(request);
+            Console.WriteLine(callOfDutyResponse.Content);
 
 
         }//method

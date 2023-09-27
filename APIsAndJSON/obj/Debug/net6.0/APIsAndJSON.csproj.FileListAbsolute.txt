@@ -26,3 +26,4 @@ C:\Users\mcguertyj\Documents\Repos\APIs-and-JSON-Exercise\APIsAndJSON\bin\Debug\
 C:\Users\mcguertyj\Documents\Repos\APIs-and-JSON-Exercise\APIsAndJSON\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Users\mcguertyj\Documents\Repos\APIs-and-JSON-Exercise\APIsAndJSON\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\mcguertyj\Documents\Repos\APIs-and-JSON-Exercise\APIsAndJSON\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\mcguertyj\Documents\Repos\APIs-and-JSON-Exercise\APIsAndJSON\bin\Debug\net6.0\RestSharp.dll

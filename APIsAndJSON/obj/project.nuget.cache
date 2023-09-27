@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pZVeqT4fCkjmc2xV0Q7/SLhrnQyBWv4AsLqA+Bjc4syXpqrv+zSj8if0cMJDdCBZssR0QlDeGgiitnvVab1d5g==",
+  "dgSpecHash": "kxIehlkDliJDvF8AiZVZY0I8v+WewSPihMG3BnP67iJX9jB8KSkmZLi4+tbV4SJ2Z/UOHrEYNYkL3LTAZx4EnA==",
   "success": true,
   "projectFilePath": "C:\\Users\\mcguertyj\\Documents\\Repos\\APIs-and-JSON-Exercise\\APIsAndJSON\\APIsAndJSON.csproj",
   "expectedPackageFiles": [
@@ -13,9 +13,10 @@
     "C:\\Users\\mcguertyj\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\microsoft.extensions.filesystemglobbing.7.0.0.nupkg.sha512",
     "C:\\Users\\mcguertyj\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\mcguertyj\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\mcguertyj\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
     "C:\\Users\\mcguertyj\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\mcguertyj\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\mcguertyj\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+    "C:\\Users\\mcguertyj\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
   ],
   "logs": []
 }
