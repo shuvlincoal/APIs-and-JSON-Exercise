@@ -64,13 +64,14 @@ namespace APIsAndJSON
                 .AddJsonFile("appsettings.json")
                 .Build();
 
-            string apiKeyStr = weatherConfig.GetConnectionString("PrvKey");
+            //string apiKeyStr = weatherConfig.GetConnectionString("ApiKey");
+            string apiKey = weatherConfig.GetSection("WeatherApi")["ApiKey"];
 
             //----------EXERCISE 2 Local Weather
             Console.WriteLine("\n\n\nExercise 2 The Weather From Nashville------");
             Console.WriteLine("Press Return to continue> ");
             Console.ReadLine();
-            string weatherUrl        = "http://api.openweathermap.org/data/2.5/weather?lat=36.1622767&lon=-86.7742984&&units=imperia&appid="+apiKeyStr;
+            string weatherUrl        = "http://api.openweathermap.org/data/2.5/weather?lat=36.1622767&lon=-86.7742984&&units=imperia&appid="+apiKey;
             string weatherResponse   =  client.GetStringAsync(weatherUrl).Result;  //send and receive the response
             JObject weatherObject    = JObject.Parse(weatherResponse);
             //Console.WriteLine(weatherObject);
