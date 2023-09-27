@@ -57,7 +57,7 @@ namespace APIsAndJSON
             Console.WriteLine("\n\n\nExercise 2 The Weather From Nashville------");
             Console.WriteLine("Press Return to continue> ");
             Console.ReadLine();
-            string weatherUrl        = "http://api.openweathermap.org/data/2.5/weather?lat=36.1622767&lon=-86.7742984&&units=imperia&appid=ea75747886474d88a2edc0e6b8e98985";
+            string weatherUrl        = "http://api.openweathermap.org/data/2.5/weather?lat=36.1622767&lon=-86.7742984&&units=imperia&appid=";
             string weatherResponse   =  client.GetStringAsync(weatherUrl).Result;  //send and receive the response
             JObject weatherObject    = JObject.Parse(weatherResponse);
             //Console.WriteLine(weatherObject);
